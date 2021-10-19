@@ -31,7 +31,7 @@ largePanel.addProperty("--boardMarginLeft", "100vw");
 largePanel.addProperty("--boardDisplay", "none");
 
 var panelController = new StateController("panel_controller");
-// panelController.addState(closePanel);
+panelController.addState(closePanel);
 panelController.addState(smallPanel);
 panelController.addState(mediumPanel);
 panelController.addState(largePanel);
