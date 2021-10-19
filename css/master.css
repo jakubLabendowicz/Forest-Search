@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --backgroundColor: #121212;
+  --textColor: #ffffff;
+  --elementsColor: #1f1f1f;
+  --iconsColorInvert: 100%;
+  --toolsButtonColor: #3F51B5;
+
+  --panelWidth: 440px;
+
+  --flashDisplay: block;
+  --flashColor: rgba(252,70,107,1);
+  --flashTime: 10s;
+}
+
+/* :root {
+  --backgroundColor: #ffffff;
+  --textColor: #000000;
+  --elementsColor: #ffffff;
+  --iconsColorInvert: 0%;
+  --toolsButtonColor: #0B1448;
+} */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  /* background-image: url("../bg4.png"); */
+  /* background-image: url("../bg0.png");
+  background-image: url("../search_panel.png"); */
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  margin: 0px;
+}

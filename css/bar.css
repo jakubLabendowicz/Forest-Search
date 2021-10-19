@@ -1,0 +1,51 @@
+.f-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.f-barInner {
+  margin: 12.5px 0px 12.5px 12.5px;
+  width: calc(100% - 25px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.f-barLogo {
+  height: 25px;
+  width: 82.84px;
+  background-image: url("../icons/logo.png");
+  background-size: cover;
+}
+
+.f-lightBar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 7px;
+  background: rgb(63,81,181);
+  background: linear-gradient(90deg, rgba(63,81,181,1) 0%, rgba(11,20,72,1) 100%);
+}
+
+.f-lightBarInner {
+  display: var(--flashDisplay);
+  height: 100%;
+  width: 100%;
+  background: rgb(252,70,107);
+  background: linear-gradient(90deg, rgba(252,70,107,0) 0%, var(--flashColor) 50%, rgba(252,70,107,0) 100%);
+  background-size: 1000%;
+  animation: lightBarAnimation var(--flashTime) infinite alternate;
+}
+
+@keyframes lightBarAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}

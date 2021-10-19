@@ -1,0 +1,252 @@
+.f-panel {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  bottom: 0px;
+  height: calc(100vh - 50px);
+  width: var(--panelWidth);
+  /* width: 100vw; */
+  /* background-color: var(--backgroundColor); */
+  /* display: none; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-y: auto;
+  animation: var(--panelAnimation);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@keyframes medium_panelWidthAnimation {
+  0%{
+    width: 100vw;
+  }
+  100%{
+    width: 440px;
+  }
+}
+
+@keyframes large_panelWidthAnimation {
+  0%{
+    width: 440px;
+  }
+  100%{
+    width: 100vw;
+  }
+}
+
+.f-panelInner {
+  padding: 40px 0px 40px 40px;
+  width: calc(100% - 40px);
+  max-width: 750px;
+  max-width: 760px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.f-panelBar {
+  height: calc(100vh - 50px);
+  width: 40px;
+}
+
+.f-panelToggler {
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: translate(40px, calc(50vh - 50px - 50px));
+  display: flex;
+  flex-direction: column;
+}
+
+.f-panelTogglerUp {
+  width: 40px;
+  padding: 0px 15px;
+  height: 50px;
+  border: 0px;
+  display: flex;
+  background-color: #00000000;
+}
+
+.f-panelTogglerUpInner {
+  width: 10px;
+  height: 50px;
+  background-color: var(--textColor);
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: 0px;
+  margin: 0px;
+  filter: opacity(0.8);
+}
+
+.f-panelTogglerDown {
+  width: 40px;
+  padding: 0px 15px;
+  height: 50px;
+  border: 0px;
+  display: flex;
+  background-color: #00000000;
+}
+
+.f-panelTogglerDownInner {
+  width: 10px;
+  height: 50px;
+  background-color: var(--textColor);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: 0px;
+  margin: 0px;
+  filter: opacity(0.8);
+}
+
+.f-panelHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* height: 110px; */
+  justify-content: space-between;
+}
+
+.f-panelHeaderStatus {
+  display: var(--noneInSmallPanel-Block);
+}
+
+.f-panelHeaderStatusTop {
+  font-size: 30px;
+}
+
+.f-panelHeaderStatusBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.f-panelHeaderBar {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.f-panelHeaderBarButton {
+  width: 24px;
+  height: 24px;
+  /* background-color: black; */
+  border-radius: 5px;
+}
+
+button.f-panelHeaderBarButton {
+  background-color: #00000000;
+  border: none;
+}
+
+.f-panelHeaderBarButtonInner {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  -webkit-filter: invert(var(--iconsColorInvert));
+  -moz-filter: invert(var(--iconsColorInvert));
+  -o-filter: invert(var(--iconsColorInvert));
+  -ms-filter: invert(var(--iconsColorInvert));
+}
+
+.f-panelTab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.f-panelTabGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.f-panelTabGroupHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: var(--noneInSmallPanel-Flex);
+}
+
+.f-panelTabGroupHeaderTitle {
+  font-size: 15px;
+}
+
+.f-panelTabGroupMain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.f-panelTabGroupMainButton {
+  width: 50px;
+  height: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--elementsColor);
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.f-panelTabGroupMainButton:hover {
+  background-color: #1f1f1faa;
+  cursor: pointer;
+}
+
+.f-panelTabGroupMainButtonInner {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  margin: 13px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  -webkit-filter: invert(var(--iconsColorInvert));
+  -moz-filter: invert(var(--iconsColorInvert));
+  -o-filter: invert(var(--iconsColorInvert));
+  -ms-filter: invert(var(--iconsColorInvert));
+}
+
+.f-panelTabGroupMainWidget {
+  width: 100%;
+  height: 86px;
+  background-color: var(--elementsColor);
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.f-panelTabGroupMainWidgetIcon {
+  height: 100%;
+}
+
+.f-panelTabGroupMainWidgetIconInner {
+  height: 50px;
+  width: 50px;
+  margin: 18px;
+  border-radius: 5px;
+}
+
+.f-panelFooter {
+  height: 40px;
+  width: 100%;
+}
+
+.noneInSmallPanel-Flex {
+  display: var(--noneInSmallPanel-Flex);
+}
