@@ -7,6 +7,7 @@ function temperature() {
     .then(response => response.json())
     .then(data => data.main)
     .then(data => data.temp)
+    .then(data => Math.round(data))
     .then(data => document.getElementById('temperature').innerHTML = data + '°C');
   }
 
@@ -17,6 +18,7 @@ function temperature() {
     .then(response => response.json())
     .then(data => data.main)
     .then(data => data.temp)
+    .then(data => Math.round(data))
     .then(data => document.getElementById('temperature').innerHTML = data + '°C');
   }
 
