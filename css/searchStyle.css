@@ -73,12 +73,20 @@
   color: var(--textColor);
 }
 
+.searchText:focus {
+  outline: none;
+}
+
 .searchSelector {
   background-color: #00000000;
   border: 0px;
   padding: 0px;
   color: var(--textColor);
   width: 120px;
+}
+
+.searchSelector:focus {
+  outline: none;
 }
 
 .searchButton {
