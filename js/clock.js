@@ -13,7 +13,7 @@ function clock() {
   var year = addZero(date.getFullYear());
   document.getElementById('clock').innerHTML = hour + ":" + minute;
   // document.getElementById('date').innerHTML = (day).toString() + "." + (month).toString() + "." + (year).toString();
-  setTimeout("clock()", 10000);
+  setTimeout("clock()", 1000);
 }
 
 clock();
