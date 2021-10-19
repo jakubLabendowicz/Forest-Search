@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Time</title>
+    <link rel="icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/searchStyle.css">
+  </head>
+  <body>
+
+    <header class="f-bar">
+      <div class="f-barInner">
+        <div class="f-barLogo">
+        </div>
+        <div class="f-lightBar"><div class="f-lightBarInner"></div></div>
+      </div>
+    </header>
+
+    <aside class="f-panel">
+      <div class="f-panelInner">
+        <div class="f-panelHeader">
+          <div class="f-panelHeaderStatus">
+            <div class="f-panelHeaderStatusTop">Hi Kuba</div>
+            <div class="f-panelHeaderStatusBottom">
+              <div class="f-panelHeaderStatusTime">12:18</div>
+              <div class="f-panelHeaderStatusWeather">25°C</div>
+            </div>
+          </div>
+          <div class="f-panelHeaderBar">
+            <div class="f-panelHeaderBarButton"><div class="f-panelHeaderBarButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
+            <div onclick="" class="f-panelHeaderBarButton"><div class="f-panelHeaderBarButtonInner" style='background-image: url("icons/apps_black_24dp.svg")'></div></div>
+            <div class="f-panelHeaderBarButton"><div class="f-panelHeaderBarButtonInner" style='background-image: url("icons/search_black_24dp.svg")'></div></div>
+            <div onclick="themeController.toogleState()" class="f-panelHeaderBarButton"><div class="f-panelHeaderBarButtonInner" style='background-image: url("icons/light_mode_black_24dp.svg")'></div></div>
+          </div>
+        </div>
+        <div class="f-panelTab">
+          <section class="f-panelTabGroup">
+            <div class="f-panelTabGroupHeader">
+              <div class="f-panelTabGroupHeaderTitle">Menu</div>
+            </div>
+            <div class="f-panelTabGroupMain">
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/lightbulb_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/task_alt_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/work_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/settings_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/work_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/settings_black_24dp.svg")'></div></div>
+            </div>
+          </section>
+          <section class="f-panelTabGroup noneInSmallPanel-Flex">
+            <div class="f-panelTabGroupHeader">
+              <div class="f-panelTabGroupHeaderTitle">Notifications</div>
+            </div>
+            <div class="f-panelTabGroupMain">
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #000000"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #0B1448"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #3F51B5"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="f-panelTabGroup noneInSmallPanel-Flex">
+            <div class="f-panelTabGroupHeader">
+              <div class="f-panelTabGroupHeaderTitle">Shortcuts</div>
+            </div>
+            <div class="f-panelTabGroupMain">
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+              <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+            </div>
+          </section>
+          <section class="f-panelTabGroup noneInSmallPanel-Flex">
+            <div class="f-panelTabGroupHeader">
+              <div class="f-panelTabGroupHeaderTitle">Today</div>
+            </div>
+            <div class="f-panelTabGroupMain">
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #000000"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #0B1448"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+              <div class="f-panelTabGroupMainWidget">
+                <div class="f-panelTabGroupMainWidgetLeft">
+                  <div class="f-panelTabGroupMainWidgetIcon">
+                    <div class="f-panelTabGroupMainWidgetIconInner" style="background-color: #3F51B5"></div>
+                  </div>
+                  <div class="f-panelTabGroupMainWidgetContent">
+                  </div>
+                </div>
+                <div class="f-panelTabGroupMainWidgetRight">
+                  <div class="f-panelTabGroupMainWidgetOptions">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div class="f-panelFooter">
+
+        </div>
+      </div>
+      <div class="f-panelBar">
+        <div class="f-panelToggler">
+          <button class="f-panelTogglerUp" onclick="panelController.toogleState()">
+            <div class="f-panelTogglerUpInner">
+
+            </div>
+          </button>
+          <button class="f-panelTogglerDown" onclick='panelController.toogleState("previous")'>
+            <div class="f-panelTogglerDownInner">
+
+            </div>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="f-board">
+      <!-- Abc -->
+      <div class="f-boardInner">
+        <div class="f-boardGroup" id="search_group">
+          <div class="f-boardGroupMain" id="search_group_main">
+            <div class="search_leaves">
+              <div class="leaf_icon">
+                <div class="leaf_icon_Inner" style='background-image: url("icons/leaf.png")'></div>
+              </div>
+              <div class="leaves_status">
+                <div class="" style="font-size: 30px;">5505</div>
+                <div class="" style="font-size: 20px;">yellow leaves</div>
+              </div>
+            </div>
+            <div class="search_panel">
+              <div class="search_panel_left">
+                <input type="text" class="searchText" id="searchText" placeholder="Write here">
+              </div>
+              <div class="search_panel_right">
+                <select class="searchSelector" id="searchSelector">
+                  <option value="Google">Google</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="Netflix">Netflix</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Wikipedia">Wikipedia</option>
+                  <option value="Google Translator (PL -> ENG)">Google Translator (PL -&gt; ENG)</option>
+                  <option value="Google Translator (ENG -> PL)">Google Translator (ENG -&gt; PL)</option>
+                </select>
+                <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(''), setHistory('')">Search</button>
+                <div class="tree"></div>
+              </div>
+            </div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="f-tools">
+        <div class="f-toolsButton">
+          <div class="f-toolsButtonInner" style='background-image: url("icons/add_circle_black_24dp.svg")'></div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="Wilga.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/panel.js"></script>
+    <script type="text/javascript" src="js/lightBar.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/setHistory.js"></script>
+  </body>
+</html>
