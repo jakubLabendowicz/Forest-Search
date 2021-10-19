@@ -16,4 +16,5 @@ activeLightBar.addProperty("--flashTime", lightBar["flashTime"]);
 var lightBarController = new StateController("lightBar_controller");
 lightBarController.addState(inactiveLightBar);
 lightBarController.addState(activeLightBar);
+lightBarController.setFirstState(1);
 lightBarController.run();

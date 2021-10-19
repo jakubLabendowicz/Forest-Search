@@ -15,4 +15,5 @@ darkTheme.addProperty("--toolsButtonColor", "#3F51B5");
 var themeController = new StateController("theme_controller");
 themeController.addState(lightTheme);
 themeController.addState(darkTheme);
+themeController.setFirstState(0);
 themeController.run();
