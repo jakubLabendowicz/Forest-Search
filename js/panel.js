@@ -35,4 +35,5 @@ var panelController = new StateController("panel_controller");
 panelController.addState(smallPanel);
 panelController.addState(mediumPanel);
 panelController.addState(largePanel);
+panelController.setFirstState(1);
 panelController.run();

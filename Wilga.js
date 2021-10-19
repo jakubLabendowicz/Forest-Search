@@ -95,6 +95,7 @@ class StateTransition {
 class StateController {
   data = {
     "name": "",
+    "firstState": 0,
     "states": [],
     "events": [],
     "buttons": []
@@ -106,6 +107,10 @@ class StateController {
 
   setName(name) {
     this.data["name"] = name;
+  }
+
+  setFirstState(firstState) {
+    this.data["firstState"] = firstState;
   }
 
   addState(state) {
@@ -161,7 +166,26 @@ class StateController {
     this.show();
   }
 
-  toogleDefaultState() {}
+  toogleDefaultState(parameter="next") {
+    var storage = new Storage(this.data["name"]);
+    var state = storage.getLocal();
+
+    if (typeof(parameter)=="string") {
+      if (parameter=="next") {
+        state++;
+      } else if (parameter=="previous") {
+        state--;
+      }
+
+    } else if (typeof(parameter)=="number") {
+      state = parameter;
+    }
+
+    if (state>this.data["states"].length-1) state=0;
+    if (state<0) state=this.data["states"].length-1;
+
+    storage.setLocal(state);
+  }
 
   synchronizeState() {
     var storage = new Storage(this.data["name"]);
@@ -191,7 +215,7 @@ class StateController {
   run() {
     var storage = new Storage(this.data["name"]);
     if (storage.getLocal() == null) {
-      storage.setLocal(0);
+      storage.setLocal(this.data["firstState"]);
     }
     if (storage.getSession() == null) {
       this.synchronizeState();
