@@ -108,3 +108,29 @@
   background-position: center;
   background-size: cover;
 }
+
+.searchBookmark {
+  width: 50px;
+  height: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--elementsColor);
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.searchBookmark:hover {
+  background-color: #1f1f1faa;
+  cursor: pointer;
+}
+
+.searchBookmarkInner {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  margin: 13px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
