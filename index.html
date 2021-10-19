@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="css/tools.css">
     <link rel="stylesheet" href="css/searchStyle.css">
+    <link rel="stylesheet" href="css/animation.css">
   </head>
   <body>
 
@@ -212,7 +213,7 @@
                   <option value="Google Translator (ENG -> PL)">Google Translator (ENG -&gt; PL)</option>
                 </select>
                 <button type="button" class="searchButton" id="searchButton" onclick='Search.autoSearch("")'>Search</button>
-                <div class="tree"></div>
+                <div class="tree" onclick="generate()"></div>
               </div>
             </div>
             <div class="searchBookmark" onclick='window.open("https://music.youtube.com/", "_self")'><div class="searchBookmarkInner" style='background-image: url("icons/bookmarks/youtube_music_social_network_song_multimedia_icon_192250.svg")'></div></div>
@@ -236,6 +237,9 @@
       </div>
     </main>
 
+    <!-- <div class="animationSection" id="animationSection">
+    </div> -->
+
     <script type="text/javascript" src="Wilga.js"></script>
     <script type="text/javascript" src="js/theme.js"></script>
     <script type="text/javascript" src="js/panel.js"></script>
@@ -244,5 +248,6 @@
     <script src="js/leavesCounter.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/temperature.js"></script>
+    <script src="js/animation.js"></script>
   </body>
 </html>
