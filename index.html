@@ -193,7 +193,7 @@
                 <div class="leaf_icon_Inner" style='background-image: url("icons/leaf.png")'></div>
               </div>
               <div class="leaves_status">
-                <div class="" style="font-size: 30px;">5505</div>
+                <div class="" style="font-size: 30px;" id="leaves_counter">0</div>
                 <div class="" style="font-size: 20px;">yellow leaves</div>
               </div>
             </div>
@@ -211,15 +211,15 @@
                   <option value="Google Translator (PL -> ENG)">Google Translator (PL -&gt; ENG)</option>
                   <option value="Google Translator (ENG -> PL)">Google Translator (ENG -&gt; PL)</option>
                 </select>
-                <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(''), setHistory('')">Search</button>
+                <button type="button" class="searchButton" id="searchButton" onclick='Search.autoSearch(""), setHistory("")'>Search</button>
                 <div class="tree"></div>
               </div>
             </div>
-            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
-            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
-            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
-            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
-            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/dashboard_black_24dp.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/bookmarks/youtube_music_social_network_song_multimedia_icon_192250.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/bookmarks/Youtube_icon-icons.com_66802.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/bookmarks/google_calendar_new_logo_icon_159141.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/bookmarks/google_drive_new_logo_icon_159136.svg")'></div></div>
+            <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/bookmarks/facebook_icon_130940.svg")'></div></div>
             <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/home_black_24dp.svg")'></div></div>
             <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/favorite_black_24dp.svg")'></div></div>
             <div class="f-panelTabGroupMainButton"><div class="f-panelTabGroupMainButtonInner" style='background-image: url("icons/schedule_black_24dp.svg")'></div></div>
@@ -242,5 +242,6 @@
     <script type="text/javascript" src="js/lightBar.js"></script>
     <script src="js/search.js"></script>
     <script src="js/setHistory.js"></script>
+    <script src="js/leavesCounter.js"></script>
   </body>
 </html>

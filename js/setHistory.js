@@ -8,7 +8,7 @@ function addZero(variable) {
 }
 
 function setHistory(data) {
-  var text = document.getElementById('textBar'+data).value;
+  var text = document.getElementById('searchText'+data).value;
   var search = document.getElementById('searchSelector'+data).value;
 
   const historyDate = new Date();
