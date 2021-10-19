@@ -35,5 +35,5 @@ panelController.addState(closePanel);
 panelController.addState(smallPanel);
 panelController.addState(mediumPanel);
 panelController.addState(largePanel);
-panelController.setFirstState(1);
+panelController.setFirstState(2);
 panelController.run();
