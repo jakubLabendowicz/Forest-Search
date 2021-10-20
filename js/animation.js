@@ -28,6 +28,6 @@ function generate() {
   animationNumber++;
 
   setTimeout(function() {
-    animationSection.remove()
+    animationSection.remove();
   }, 6000);
 }
