@@ -63,6 +63,7 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 25px;
+  align-items: center;
 }
 
 .searchText {
@@ -90,16 +91,35 @@
 }
 
 .searchButton {
+  width: 40px;
+  height: 40px;
   background-color: #00000000;
   border: 0px;
   padding: 0px;
-  color: var(--textColor);
-  width: 75px;
+  border-radius: 5px;
+  /* color: var(--textColor); */
+  -webkit-filter: invert(var(--iconsColorInvert));
+  -moz-filter: invert(var(--iconsColorInvert));
+  -o-filter: invert(var(--iconsColorInvert));
+  -ms-filter: invert(var(--iconsColorInvert));
+}
+
+.searchButton:hover {
+  background-color: #1f1f1faa;
+  cursor: pointer;
+}
+
+.searchButtonInner {
+  background-size: cover;
+  margin: 13px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 
 .tree {
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(-125px);
   height: 200px;
   width: 166px;
   /* width: 400px; */
@@ -110,8 +130,6 @@
 }
 
 .searchBookmark {
-  width: 50px;
-  height: 50px;
   width: 40px;
   height: 40px;
   background-color: var(--elementsColor);
