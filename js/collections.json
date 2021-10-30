@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Favorites pages",
+    "desription": "",
+    "type": "pages",
+    "sections": [
+      {
+        "name": "main",
+        "elements": [
+          {
+            "name": "Youtube Music",
+            "type": "page",
+            "iconUrl": "https://raw.githubusercontent.com/jakubLabendowicz/Forest-Search/55702f47b02bc1a6359e7d49bd86d9eb310bd82c/icons/bookmarks/youtube_music_social_network_song_multimedia_icon_192250.svg",
+            "url": "https://music.youtube.com/"
+          },
+          {
+            "name": "Youtube",
+            "type": "page",
+            "iconUrl": "https://raw.githubusercontent.com/jakubLabendowicz/Forest-Search/55702f47b02bc1a6359e7d49bd86d9eb310bd82c/icons/bookmarks/Youtube_icon-icons.com_66802.svg",
+            "url": "https://www.youtube.com/"
+          },
+          {
+            "name": "Google Calendar",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://calendar.google.com/"
+          },
+          {
+            "name": "Google Drive",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://drive.google.com/"
+          },
+          {
+            "name": "Gmail",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://mail.google.com/"
+          },
+          {
+            "name": "Google Translator",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://translate.google.pl/"
+          },
+          {
+            "name": "Google Maps",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://www.google.pl/maps/"
+          },
+          {
+            "name": "Facebook",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://www.facebook.com"
+          },
+          {
+            "name": "Messenger",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://www.facebook.com/messages"
+          },
+          {
+            "name": "Twitter",
+            "type": "page",
+            "iconUrl": "",
+            "url": "https://twitter.com/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "To read",
+    "desription": "",
+    "type": "pages",
+    "sections": [
+      {
+        "name": "main",
+        "elements": [
+          {
+            "name": "",
+            "type": "page",
+            "iconUrl": "",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Favorite colors",
+    "desription": "",
+    "type": "colors",
+    "sections": [
+      {
+        "name": "main",
+        "elements": [
+          {
+            "name": "Black",
+            "type": "color",
+            "color": "#000000"
+          }
+        ]
+      }
+    ]
+  }
+]
